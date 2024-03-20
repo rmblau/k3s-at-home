@@ -27,4 +27,5 @@ spec:
     name: flux-system
   decryption:
     provider: sops
-    secretRef: sops-gpg
+    secretRef:
+      name: sops-gpg
