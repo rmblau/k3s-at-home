@@ -1,9 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- .git/info/exclude
-- clusters/raspberrypi/apps
-- clusters/raspberrypi/core
-- clusters/raspberrypi/flux-system
-- clusters/raspberrypi/helm-charts
-- clusters/raspberrypi/secrets
