@@ -18,9 +18,11 @@ spec:
       labels:
         k8s-app: metrics-server
     spec:
+      hostnetwork: true
       containers:
       - args:
         - /metrics-server
+        - --v=6
         - --cert-dir=/tmp
         - --secure-port=10250
         - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
@@ -69,7 +71,6 @@ spec:
         kubernetes.io/os: linux
       priorityClassName: system-cluster-critical
       serviceAccountName: metrics-server
-      hostnetwork: true
       volumes:
       - emptyDir: {}
         name: tmp-dir
