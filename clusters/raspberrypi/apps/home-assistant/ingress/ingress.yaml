@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: home-assistant
+  annotations:
+    tailscale.com/funnel: "true"
+spec:
+  defaultBackend:
+    service:
+      name: funnel
+      port:
+        number: 80
+  ingressClassName: tailscale
+  tls:
+  - hosts:
+    - home-assistant
