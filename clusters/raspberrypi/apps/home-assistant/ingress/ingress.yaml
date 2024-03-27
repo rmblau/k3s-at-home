@@ -9,17 +9,10 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: funnel
+      name: home-assistant
       port:
         number: 80
   ingressClassName: tailscale
   tls:
   - hosts:
     - home-assistant
-status:
-  loadBalancer:
-    ingress:
-    - hostname: home-assistant.tail9dea6.ts.net
-      ports:
-      - port: 443
-        protocol: TCP
