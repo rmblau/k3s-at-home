@@ -6,7 +6,7 @@ metadata:
   labels:
     app: home-assistant
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: home-assistant
@@ -26,4 +26,4 @@ spec:
             cpu: "500m"
             memory: "4Gi"
         ports:
-        - containerPort: 80
+        - containerPort: 8123
