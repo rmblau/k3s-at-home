@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
   - longhorn-ingress.yaml
   - longhorn-route.yaml
-  - traefik-middeware.yaml
+#  - traefik-middeware.yaml
