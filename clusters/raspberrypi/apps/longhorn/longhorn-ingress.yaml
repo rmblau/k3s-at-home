@@ -16,4 +16,5 @@ spec:
         backend:
           service:
             name: longhorn-frontend
-            servicePort: 80
+            port:
+              number: 80
