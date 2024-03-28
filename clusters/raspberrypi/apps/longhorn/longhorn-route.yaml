@@ -10,6 +10,6 @@ spec:
   routes:
     - match: Host(`longhorn`)
       kind: Rule
-      service:
+      services:
         - name: longhorn-frontend
           port: 80
