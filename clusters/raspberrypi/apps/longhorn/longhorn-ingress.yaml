@@ -5,13 +5,13 @@ metadata:
   namespace: longhorn-system
   annotations:
     # type of authentication
-    nginx.ingress.kubernetes.io/auth-type: basic
+    traefik.ingress.kubernetes.io/auth-type: basic
     # prevent the controller from redirecting (308) to HTTPS
-    nginx.ingress.kubernetes.io/ssl-redirect: 'false'
+    traefik.ingress.kubernetes.io/ssl-redirect: 'false'
     # name of the secret that contains the user/password definitions
-    nginx.ingress.kubernetes.io/auth-secret: longhorn-auth
+    traefik.ingress.kubernetes.io/auth-secret: longhorn-auth
     # message to display with an appropriate context why the authentication is required
-    nginx.ingress.kubernetes.io/auth-realm: 'Authentication Required '
+    traefik.ingress.kubernetes.io/auth-realm: 'Authentication Required '
 spec:
   rules:
   - http:
