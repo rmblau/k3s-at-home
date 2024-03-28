@@ -8,7 +8,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`longhorn`)
+    - match: Host(`raspberrypi.tail9dea6.ts.net`)
       kind: Rule
       services:
         - name: longhorn-frontend
