@@ -8,10 +8,9 @@ spec:
   interval: 30m
   chart:
     spec:
-      # renovate: registryUrl=https://charts.jetstack.io
       chart: longhorn
       version: "1.60"
       sourceRef:
         kind: HelmRepository
-        name: longhorn-charts
+        name: longhorn-repo
         namespace: flux-system
