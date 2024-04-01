@@ -29,9 +29,9 @@ spec:
           limits:
             cpu: "500m"
             memory: "4Gi"
-        volumes:
-        - name: home-assistant-pvc
-          persistentVolumeClaim: home-assistant-pvc
+      volumes:
+      - name: home-assistant-pvc
+        persistentVolumeClaim: home-assistant-pvc
 
         ports:
         - containerPort: 80
