@@ -2,8 +2,8 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: cert-manager
-  namespace: cert-manager
+  name: longhorn
+  namespace: longhorn-system
 spec:
   interval: 30m
   chart:
