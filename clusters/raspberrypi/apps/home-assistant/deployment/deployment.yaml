@@ -18,6 +18,9 @@ spec:
       containers:
       - name: home-assistant
         image: ghcr.io/home-assistant/home-assistant:stable
+        env:
+        - name: trusted_proxies
+          value: 10.42.1.94
         resources:
           requests:
             cpu: "250m"
@@ -26,4 +29,4 @@ spec:
             cpu: "500m"
             memory: "4Gi"
         ports:
-        - containerPort: 8123
+        - containerPort: 80
