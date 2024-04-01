@@ -20,7 +20,7 @@ spec:
       - name: home-assistant
         image: ghcr.io/home-assistant/home-assistant:stable
         volumeMounts:
-        - mountPath: "/config"
+        - mountPath: /config
           name: home-assistant-pvc
         resources:
           requests:
@@ -29,9 +29,9 @@ spec:
           limits:
             cpu: "500m"
             memory: "4Gi"
-      volumes:
-      - name: home-assistant-pvc
-        persistentVolumeClaim: home-assistant-pvc
-
         ports:
         - containerPort: 80
+      volumes:
+      - name: home-assistant-pvc
+        persistentVolumeClaim:
+          claimName: home-assistant-pvc
