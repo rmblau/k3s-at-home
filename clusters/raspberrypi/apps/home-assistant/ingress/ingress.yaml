@@ -2,17 +2,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: homeassistant
+  name: home-assistant-ingress
   namespace: home-assistant
   annotations:
-    tailscale.com/funnel: "true"
+    traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
-  defaultBackend:
-    service:
-      name: home-assistant
-      port:
-        number: 80
-  ingressClassName: tailscale
-  tls:
-  - hosts:
-    - home-assistant
+  rules:
+    - host: raspberrypi.tail9dea6.ts.net
+      http:
+        paths:
+          - path: /home-assistant
+            pathType: Prefix
+            backend:
+              service:
+                name: home-assistant
+                port:
+                  number: 80
