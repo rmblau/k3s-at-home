@@ -1,0 +1,67 @@
+---
+apiVersion: v1
+data:
+  values.yaml: |-
+    prometheus:
+      prometheusSpec:
+        retention: 30d
+        retentionSize: 5GiB
+        scrapeInterval: 10s
+        storageSpec:
+          volumeClaimTemplate:
+            spec:
+              storageClassName: longhorn
+              accessModes: [ "ReadWriteOnce" ]
+              resources:
+                requests:
+                  storage: 10Gi
+    grafana:
+      persistence:
+        enabled: true  # enable persistence using Persistent Volumes
+        storageClassName: longhorn
+        accessModes: [ "ReadWriteOnce" ]
+        type: pvc
+        size: 10Gi
+      admin:
+        existingSecret: "kube-prometheus-stack"
+        userKey: admin_user
+        passwordKey: admin-password
+      grafana.ini:
+        server:
+          root_url: https://grafana.tail9dea6.ts.net
+        date_formats:
+          interval_second: HH:mm:ss
+          interval_minute: HH:mm
+          interval_hour:  DD/MM HH:mm
+          interval_day: DD/MM
+          interval_month: MM-YYYY
+          interval_year: YYYY
+        paths:
+          data: /var/lib/grafana/
+          logs: /var/log/grafana
+          plugins: /var/lib/grafana/plugins
+          provisioning: /etc/grafana/provisioning
+        analytics:
+          check_for_updates: true
+        log:
+          mode: console
+        grafana_net:
+          url: https:/grafana.tail9dea6.ts.net
+        auth.basic:
+          enabled: true
+      dashboardProviders:
+        dashboardproviders.yaml:
+          apiVersion: 1
+          providers:
+          - name: 'default'
+            orgId: 1
+            folder: ''
+            type: file
+            disableDeletion: false
+            editable: true
+            options:
+              path: /var/lib/grafana/dashboards/default
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: prometheus-values
