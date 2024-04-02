@@ -65,3 +65,4 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: prometheus-values
+  namespace: monitoring
