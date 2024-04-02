@@ -7,6 +7,7 @@ spec:
   selector:
     app.kubernetes.io/name: home-assistant-wyze-bridge
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 5000
+  - name: http
+    port: 80
+    targetPort: 5000
+  type: ClusterIP
