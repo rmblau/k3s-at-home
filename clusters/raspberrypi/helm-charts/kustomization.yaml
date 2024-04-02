@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
 - jetstack-charts.yaml
 - longhorn-charts.yaml
+- prometheus-charts.yaml
