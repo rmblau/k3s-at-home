@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-assistant-wyze-deployment
+  namespace: home-assistant
+  labels:
+    app: home-assistant-wyze-bridge
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: home-assistant-wyze-bridge
+  template:
+    metadata:
+      labels:
+        app: home-assistant-wyze-bridge
+    spec:
+      containers:
+      - name: home-assistant-wyze-bridge
+        image: mrlt8/wyze-bridge
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "512m"
+          limits:
+            cpu: "500m"
+            memory: "1Gi"
+        ports:
+        - containerPort: 80
