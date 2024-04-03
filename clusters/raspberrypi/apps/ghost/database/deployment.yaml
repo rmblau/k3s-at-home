@@ -7,8 +7,6 @@ metadata:
   labels:
     app: mysql
 spec:
-  nodeSelector:
-    disktype: ssd
   replicas: 1
   selector:
     matchLabels:
@@ -18,6 +16,8 @@ spec:
       labels:
         app: mysql
     spec:
+      nodeSelector:
+        disktype: ssd
       containers:
       - name: mysql
         image: mysql:8
