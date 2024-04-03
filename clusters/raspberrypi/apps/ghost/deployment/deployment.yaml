@@ -18,6 +18,16 @@ spec:
       labels:
         app: ghost
     spec:
+      env:
+      database__client: mysql
+      database__connection__host: 10.43.102.50
+      database__connection__user: root
+      database__connection__password:
+        valueFrom:
+          secretKeyRef:
+            key: password
+            name: mysql-root-password
+      database__connection__database: ghost
       containers:
       - name: ghost
         image: ghost:5
