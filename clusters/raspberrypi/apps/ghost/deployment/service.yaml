@@ -11,4 +11,4 @@ spec:
     targetPort: 2368
   selector:
     app: ghost
-  ClusterIP: 10.43.195.88
+  ClusterIP: 10.43.102.51
