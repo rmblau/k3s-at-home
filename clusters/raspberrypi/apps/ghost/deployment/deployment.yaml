@@ -18,6 +18,8 @@ spec:
       labels:
         app: ghost
     spec:
+      nodeSelector:
+        disktype: ssd
       containers:
       - name: ghost
         image: ghost:5
