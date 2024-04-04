@@ -29,11 +29,10 @@ spec:
         - name: database__connection__user
           value: root
         - name: database__connection__password
-          value:
-            valueFrom:
-              secretKeyRef:
-                key: password
-                name: mysql-root-password
+          valueFrom:
+            secretKeyRef:
+              key: password
+              name: mysql-root-password
         - name: database__connection__database
           value: ghost
         volumeMounts:
