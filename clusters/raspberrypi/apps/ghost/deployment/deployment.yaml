@@ -25,7 +25,7 @@ spec:
         - name: database__client
           value: mysql
         - name: database__connection__host
-          value: mysql.tail9dea6.ts.net
+          value: mysql.tail9dea6.ts.net:443
         - name: database__connection__user
           value: root
         - name: database__connection__password
