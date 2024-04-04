@@ -18,19 +18,24 @@ spec:
       labels:
         app: ghost
     spec:
-      env:
-      database__client: mysql
-      database__connection__host: https://mysql.tail9dea6.ts.net
-      database__connection__user: root
-      database__connection__password:
-        valueFrom:
-          secretKeyRef:
-            key: password
-            name: mysql-root-password
-      database__connection__database: ghost
       containers:
       - name: ghost
         image: ghost:5
+        env:
+        - name: database__client
+          value: mysql
+        - name: database__connection__host
+          value: https://mysql.tail9dea6.ts.net
+        - name: database__connection__user
+          value: root
+        - name: database__connection__password
+          value:
+            valueFrom:
+              secretKeyRef:
+                key: password
+                name: mysql-root-password
+        - name: database__connection__database
+          value: ghost
         volumeMounts:
         - mountPath: /var/lib/ghost/content
           name: ghost-pvc
