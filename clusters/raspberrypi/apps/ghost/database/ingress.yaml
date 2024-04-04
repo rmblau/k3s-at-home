@@ -8,7 +8,7 @@ spec:
     service:
       name: mysql-svc
       port:
-        number: 3306
+        number: 80
   ingressClassName: tailscale
   tls:
   - hosts:
