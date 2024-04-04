@@ -20,7 +20,7 @@ spec:
     spec:
       env:
       database__client: mysql
-      database__connection__host: 10.43.102.50
+      database__connection__host: https://mysql.tail9dea6.ts.net
       database__connection__user: root
       database__connection__password:
         valueFrom:
