@@ -6,8 +6,8 @@ metadata:
   namespace: ghost
 spec:
   ports:
-  - port: 8080
+  - port: 3306
     protocal: TCP
-    targetPort: 80
+    targetPort: 3306
   selector:
     app: mysql
