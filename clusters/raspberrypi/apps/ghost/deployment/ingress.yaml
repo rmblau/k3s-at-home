@@ -10,7 +10,7 @@ spec:
     service:
       name: ghost-svc
       port:
-        number: 8080
+        number: 80
   ingressClassName: tailscale
   tls:
   - hosts:
