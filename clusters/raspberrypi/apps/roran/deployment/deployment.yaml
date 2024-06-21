@@ -22,7 +22,7 @@ spec:
         disktype: ssd
       containers:
       - name: roran
-        image: localhost:5000/roran:latest
+        image: 100.98.69.111:5000/roran:latest
         resources:
           requests:
             cpu: "250m"
