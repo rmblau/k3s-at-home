@@ -23,6 +23,17 @@ spec:
       containers:
       - name: roran
         image: 100.98.69.111:5000/roran
+        env:
+        - name: token
+          valueFrom:
+            secretKeyRef:
+              key: token
+              name: roran-api-keys
+        - name: weather-token
+          valueFrom:
+            secretKeyRef:
+              key: weather_token
+              name: roran-api-keys
         resources:
           requests:
             cpu: "250m"
