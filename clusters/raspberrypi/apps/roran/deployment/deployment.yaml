@@ -22,7 +22,7 @@ spec:
         disktype: ssd
       containers:
       - name: roran
-        image: roran/roran
+        image: roran
         resources:
           requests:
             cpu: "250m"
