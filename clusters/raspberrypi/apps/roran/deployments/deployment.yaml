@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: roran-deployment
+  namespace: roran
+  labels:
+    app: roran
+spec:
+  nodeSelector:
+    disktype: ssd
+  replicas: 1
+  selector:
+    matchLabels:
+      app: roran
+  template:
+    metadata:
+      labels:
+        app: roran
+    spec:
+      nodeSelector:
+        disktype: ssd
+      containers:
+      - name: roran
+        image: roran
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "512Mi"
+          limits:
+            cpu: "500m"
+            memory: "2Gi"
