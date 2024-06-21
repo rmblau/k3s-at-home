@@ -6,4 +6,4 @@ resources:
   - longhorn
   - monitoring
   - ghost
-  #- roran
+  - roran
