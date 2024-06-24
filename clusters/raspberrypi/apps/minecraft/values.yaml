@@ -39,7 +39,7 @@ data:
     strategyType: Recreate
 
     nodeSelector:
-      diskType: ssd
+      disktype: ssd
 
     tolerations: []
 
