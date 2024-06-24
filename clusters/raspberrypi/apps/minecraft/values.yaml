@@ -376,10 +376,10 @@ data:
         #     hosts:
         #       - name: map.local
         #         path: /
-             tls:
+        #     tls:
         #       - secretName: map-tls
-              hosts:
-                - minecraft
+        #      hosts:
+        #        - minecraft
 
       query:
         # If you enable this, your server will be "published" to Gamespy
