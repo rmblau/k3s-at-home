@@ -181,7 +181,7 @@ data:
       # A comma-separated list of player names to whitelist.
       whitelist:
       # A comma-separated list of player names who should be admins.
-      ops:
+      ops: Xavierdarkness
       # A server icon URL for server listings. Auto-scaled and transcoded.
       icon:
       # Max connected players.
