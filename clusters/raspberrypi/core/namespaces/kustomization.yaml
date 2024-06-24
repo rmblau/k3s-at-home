@@ -7,4 +7,5 @@ resources:
 - longhorn.yaml
 - ghost.yaml
 - monitoring.yaml
+- minecraft.yaml
 - roran.yaml
