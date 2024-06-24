@@ -248,7 +248,7 @@ data:
       # Check accounts against Minecraft account service.
       onlineMode: default
       # Require public key to be signed by Mojang to join
-      enforceSecureProfile: default
+      enforceSecureProfile: false
       # If you adjust this, you may need to adjust resources.requests above to match.
       memory: 1024M
       # General JVM options to be passed to the Minecraft server invocation
@@ -261,7 +261,7 @@ data:
       overrideServerProperties: false
       # DEPRECATED: use top-level rconServiceAnnotations instead
       serviceAnnotations: {}
-      serviceType: LoadBalancer
+      serviceType: ClusterIP
       ## Set the port used if the serviceType is NodePort
       nodePort:
       # Set the external port of the service, usefull when using the LoadBalancer service type
