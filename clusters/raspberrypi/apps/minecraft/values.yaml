@@ -347,14 +347,15 @@ data:
 
       extraPorts:
 
+
         # These options allow you to expose another port from the Minecraft server, plugins such
         # as dynmap (8123) and bluemap (8100) will require this for access to their web interfaces
         #
         # - name: map
         #   containerPort: 8123
         #   protocol: TCP
-        #   service:
-        #     enabled: false
+           service:
+            enabled: true
         #     embedded: false
         #     annotations: {}
         #     type: ClusterIP
@@ -364,10 +365,10 @@ data:
         #     loadBalancerSourceRanges: []
         #     externalTrafficPolicy: Cluster
         #     port: 8123
-           ingress:
-             ingressClassName: tailscale
-             enabled: true
-             annotations:
+            ingress:
+              ingressClassName: tailscale
+              enabled: true
+              annotations:
               tailscale.com/funnel: "true"
         ## Deprecated way for specifying the ingressClass. Kube.version < 1.18
         ##       kubernetes.io/ingress.class: nginx
