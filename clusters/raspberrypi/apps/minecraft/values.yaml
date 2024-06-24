@@ -265,7 +265,7 @@ data:
       ## Set the port used if the serviceType is NodePort
       nodePort:
       # Set the external port of the service, usefull when using the LoadBalancer service type
-      servicePort: 5000
+      servicePort: 80
       clusterIP:
       loadBalancerIP:
       # loadBalancerSourceRanges: []

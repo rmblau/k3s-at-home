@@ -10,7 +10,7 @@ spec:
     service:
       name: minecraft-minecraft
       port:
-        number: 5000
+        number: 80
   ingressClassName: tailscale
   tls:
   - hosts:
