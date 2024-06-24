@@ -179,9 +179,9 @@ data:
       # One of: peaceful, easy, normal, and hard
       difficulty: normal
       # A comma-separated list of player names to whitelist.
-      whitelist:
+      whitelist:Xavierd123
       # A comma-separated list of player names who should be admins.
-      ops:
+      ops: Xavierd123
       # A server icon URL for server listings. Auto-scaled and transcoded.
       icon:
       # Max connected players.
