@@ -181,7 +181,7 @@ data:
       # A comma-separated list of player names to whitelist.
       whitelist:
       # A comma-separated list of player names who should be admins.
-      ops: Xavierdarkness, Xavierd123
+      ops:
       # A server icon URL for server listings. Auto-scaled and transcoded.
       icon:
       # Max connected players.
@@ -265,7 +265,7 @@ data:
       ## Set the port used if the serviceType is NodePort
       nodePort:
       # Set the external port of the service, usefull when using the LoadBalancer service type
-      servicePort: 80
+      servicePort: 5000
       clusterIP:
       loadBalancerIP:
       # loadBalancerSourceRanges: []
@@ -346,7 +346,7 @@ data:
         # externalTrafficPolicy: Cluster
 
       extraPorts:
-      []
+        []
 
         # These options allow you to expose another port from the Minecraft server, plugins such
         # as dynmap (8123) and bluemap (8100) will require this for access to their web interfaces
@@ -366,10 +366,9 @@ data:
         #     externalTrafficPolicy: Cluster
         #     port: 8123
         #   ingress:
-        #     ingressClassName: tailscale
-        #     enabled: true
+        #     ingressClassName: nginx
+        #     enabled: false
         #     annotations:
-        #      tailscale.com/funnel: "true"
         ## Deprecated way for specifying the ingressClass. Kube.version < 1.18
         ##       kubernetes.io/ingress.class: nginx
         #       kubernetes.io/tls-acme: "true"
@@ -378,8 +377,8 @@ data:
         #         path: /
         #     tls:
         #       - secretName: map-tls
-        #      hosts:
-        #        - minecraft
+        #         hosts:
+        #           - map.local
 
       query:
         # If you enable this, your server will be "published" to Gamespy
