@@ -1,13 +1,16 @@
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRouteTCP
+apiVersion: networking.k8s.io/v1
+kind: Ingress
 metadata:
-  name: minecraft
+  name: minecraft-ingress
   namespace: minecraft
 spec:
-  entryPoints:
-    - web
-  routes:
-    - match: HostSNI(`*`)
-      services:
-        - name: minecraft-minecraft
-          port: 80
+  rules:
+    - http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: minecraft-minecraft
+                port: 25565
+  ingressClassName: traefik
