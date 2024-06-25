@@ -207,3 +207,4 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: mcrouter-values
+  namespace: minecraft
