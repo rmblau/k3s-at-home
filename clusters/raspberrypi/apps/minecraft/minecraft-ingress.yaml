@@ -4,16 +4,16 @@ metadata:
   name: minecraft-ingress
   namespace: minecraft
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: websecure
-    traefik.ingress.kubernetes.io/router.tls: "true"
+    traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   rules:
-  - http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        defaultBackend:
-          service:
-          name: minecraft-minecraft
-          port:
-            number: 80
+    - host: minecraft.rmblau.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: minecraft-minecraft
+                port:
+                  number: 80
