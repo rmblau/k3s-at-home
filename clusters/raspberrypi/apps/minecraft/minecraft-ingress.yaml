@@ -12,5 +12,6 @@ spec:
             backend:
               service:
                 name: minecraft-minecraft
-                port: 25565
+                port:
+                  number: 25565
   ingressClassName: traefik
