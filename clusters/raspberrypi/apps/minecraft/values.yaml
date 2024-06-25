@@ -261,11 +261,11 @@ data:
       overrideServerProperties: false
       # DEPRECATED: use top-level rconServiceAnnotations instead
       serviceAnnotations: {}
-      serviceType: ClusterIP
+      serviceType: NodePort
       ## Set the port used if the serviceType is NodePort
-      nodePort:
+      nodePort: 25565
       # Set the external port of the service, usefull when using the LoadBalancer service type
-      servicePort: 25565
+      servicePort: 80
       clusterIP:
       loadBalancerIP:
       # loadBalancerSourceRanges: []
