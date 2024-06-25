@@ -12,7 +12,7 @@ spec:
       paths:
       - pathType: Prefix
         path: "/"
-        backend:
+        defaultBackend:
           service:
             name: minecraft-minecraft
             port:
