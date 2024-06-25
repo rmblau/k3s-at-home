@@ -1,19 +1,13 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRouteTCP
 metadata:
   name: minecraft-ingress
   namespace: minecraft
-  annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
-  rules:
-    - host: minecraft.rmblau.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            defaultBackend:
-              service:
-                name: minecraft-minecraft
-                port:
-                  number: 80
+  entryPoints:
+    - web
+  routes:
+    - match: HostSNI(`*`)
+      services:
+        - name: minecraft-minecraft
+          port: 80
