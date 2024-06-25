@@ -164,9 +164,9 @@ data:
 
       # Minecraft server mappings
       mappings: []
-        # - externalHostname: ""
-        #   host: ""
-        #   port: 25565
+         - externalHostname: brom-k8s-node.tail9dea6.ts.net
+            host: "100.98.69.111"
+            port: 25565
 
       metrics:
         # Backend to use for metrics exposure/publishing: discard,expvar,influxdb
