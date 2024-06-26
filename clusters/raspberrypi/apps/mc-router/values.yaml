@@ -64,7 +64,7 @@ data:
 
       # Service for Minecraft client connections
       minecraft:
-        type: NodePort
+        type: LoadBalancer
         # Service port exposed within the cluster
         port: 25565
         # Service port exposed externally on each node
