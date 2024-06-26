@@ -68,7 +68,7 @@ data:
         # Service port exposed within the cluster
         port: 25565
         # Service port exposed externally on each node
-        # nodePort: 30065
+        nodePort: 30065
         # Service annotations
         # annotations: {}
 
