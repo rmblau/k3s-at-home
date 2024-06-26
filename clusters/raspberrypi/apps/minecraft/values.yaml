@@ -179,7 +179,7 @@ data:
       # One of: peaceful, easy, normal, and hard
       difficulty: normal
       # A comma-separated list of player names to whitelist.
-      whitelist: Xavierd123,Xavierdarkness, komradfox
+      whitelist: Xavierd123,Xavierdarkness,"komrad fox"
       # A comma-separated list of player names who should be admins.
       ops: Xavierd123,Xavierdarkness
       # A server icon URL for server listings. Auto-scaled and transcoded.
