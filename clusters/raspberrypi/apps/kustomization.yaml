@@ -5,7 +5,7 @@ resources:
   - home-assistant
   - longhorn
   - monitoring
-  - minecraft
+ # - minecraft
   - mc-router
   - ghost
   - roran
