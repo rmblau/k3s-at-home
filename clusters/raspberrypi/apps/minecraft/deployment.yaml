@@ -22,17 +22,17 @@ spec:
           mountPath: /minecraft
         env:
         - name: MaxMemory
-          value: '2048'
+          value: '4096'
         - name: k8s
           value: "True"
         resources:
           limits:
             cpu: 1500m
-            memory: 2048M
+            memory: 4096M
             ephemeral-storage: 50Mi
           requests:
             cpu: 750m
-            memory: 750M
+            memory: 2048M
             ephemeral-storage: 2Mi
         ports:
         - containerPort: 25565
