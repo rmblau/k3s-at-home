@@ -25,6 +25,8 @@ spec:
           value: '4096'
         - name: k8s
           value: "True"
+        - name: eula
+          value: "True"
         resources:
           limits:
             cpu: 1500m

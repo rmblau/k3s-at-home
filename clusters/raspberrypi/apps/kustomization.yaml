@@ -6,6 +6,6 @@ resources:
   - longhorn
   - monitoring
   - minecraft
-  - mc-router
+#  - mc-router
   - ghost
   - roran
