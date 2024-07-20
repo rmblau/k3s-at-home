@@ -16,7 +16,7 @@ spec:
       containers:
       - name: minecraft
         image: 05jchambers/legendary-minecraft-geyser-floodgate:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         volumeMounts:
         - name: minecraft-data
           mountPath: /minecraft
