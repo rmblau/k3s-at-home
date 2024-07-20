@@ -5,9 +5,6 @@ metadata:
   namespace: minecraft
 spec:
   type: LoadBalancer
-  ipFamilyPolicy: PreferDualStack
-  ipFamilies:
-    - IPv4
   ports:
     - name: java
       port: 25565
@@ -17,5 +14,10 @@ spec:
       port: 19132
       protocol: UDP
       targetPort: bedrock-v4
+    - name: bedrock-v4-tcp
+      port: 19132
+      protocol: TCP
+      targetPort: bedrock-v4
+
   selector:
     app: minecraft
