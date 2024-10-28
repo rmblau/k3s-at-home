@@ -21,7 +21,7 @@ data:
         storageClassName: longhorn
         accessModes: [ "ReadWriteOnce" ]
         type: pvc
-        size: 10Gi
+        size: 50Gi
       admin:
         existingSecret: "kube-prometheus-stack"
         userKey: admin_user
