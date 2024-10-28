@@ -14,7 +14,7 @@ data:
               accessModes: [ "ReadWriteOnce" ]
               resources:
                 requests:
-                  storage: 10Gi
+                  storage: 50Gi
     grafana:
       persistence:
         enabled: true  # enable persistence using Persistent Volumes
