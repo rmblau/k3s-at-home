@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -25,11 +24,17 @@ spec:
         io.kompose.service: minio-provision
     spec:
       containers:
-        image: minio/mc
-        name: minio-provision
-        volumeMounts:
-          - mountPath: /data
-            name: minio-data
+        - command:
+            - sh
+            - /provision.sh
+          image: minio/mc
+          name: minio-provision
+          volumeMounts:
+            - mountPath: /provision.sh
+              name: minio-provision-claim0
+              readOnly: true
+            - mountPath: /data
+              name: minio-data
       restartPolicy: Always
       volumes:
         - name: minio-provision-claim0
