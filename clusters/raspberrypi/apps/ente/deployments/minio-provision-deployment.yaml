@@ -28,9 +28,6 @@ spec:
         image: minio/mc
         name: minio-provision
         volumeMounts:
-          - mountPath: /provision.sh
-            name: minio-provision-claim0
-            readOnly: true
           - mountPath: /data
             name: minio-data
       restartPolicy: Always
