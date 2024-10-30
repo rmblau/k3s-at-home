@@ -1,0 +1,11 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - custom-logs-persistentvolumeclaim.yaml
+  - minio-data-persistentvolumeclaim.yaml
+  - minio-provision-claim0-persistentvolumeclaim.yaml
+  - museum-claim1-persistentvolumeclaim.yaml
+  - museum-claim2-persistentvolumeclaim.yaml
+  - museum-claim3-persistentvolumeclaim.yaml
+  - postgres-data-persistentvolumeclaim.yaml

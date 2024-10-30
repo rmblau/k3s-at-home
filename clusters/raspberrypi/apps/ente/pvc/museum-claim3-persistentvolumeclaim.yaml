@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: ente-server
+  labels:
+    io.kompose.service: museum-claim3
+  name: museum-claim3
+spec:
+  accessModes:
+    - ReadOnlyMany
+  storageClassName: longhorn
+  resources:
+    requests:
+      storage: 100Mi

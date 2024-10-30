@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  naemapsace: ente-server
+  labels:
+    io.kompose.service: minio-provision-claim0
+  name: minio-provision-claim0
+spec:
+  accessModes:
+    - ReadOnlyMany
+  storageClassName: longhorn
+  resources:
+    requests:
+      storage: 100Mi
