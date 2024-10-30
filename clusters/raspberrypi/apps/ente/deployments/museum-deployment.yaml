@@ -25,12 +25,12 @@ spec:
     spec:
       containers:
         - env:
-            - name: POSTGRES_USER
+            - name: ente-postgres
               valueFrom:
                 secretKeyRef:
                   key: POSTGRES_USER
                   name: ente-postgres
-            - name: POSTGRES_PASSWORD
+            - name: ente-postgres
               valueFrom:
                 secretKeyRef:
                   key: POSTGRES_PASSWORD
