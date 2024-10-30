@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
   - deployments
   - pvc
-  #- service
+  - service
