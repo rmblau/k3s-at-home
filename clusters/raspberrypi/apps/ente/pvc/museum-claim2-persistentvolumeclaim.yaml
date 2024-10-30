@@ -7,7 +7,7 @@ metadata:
   name: museum-claim2
 spec:
   accessModes:
-    - ReadOnlyOnce
+    - ReadWriteOnce
   storageClassName: longhorn
   resources:
     requests:
