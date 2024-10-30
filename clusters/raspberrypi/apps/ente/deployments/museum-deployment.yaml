@@ -47,10 +47,8 @@ spec:
               name: custom-logs
             - mountPath: /museum.yaml
               name: museum-claim1
-              readOnly: true
             - mountPath: /data
               name: museum-claim3
-              readOnly: true
         - args:
             - TCP-LISTEN:3200,fork,reuseaddr
             - TCP:minio:3200
