@@ -1,0 +1,14 @@
+# This volume holds your photos.
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: photos
+  namespace: librephotos
+spec:
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: longhorn
+  accessModes:
+  - ReadWriteOnce
