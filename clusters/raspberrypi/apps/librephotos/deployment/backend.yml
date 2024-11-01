@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: reallibrephotos/librephotos:latest
+        image: reallibrephotos/librephotos:2024w40
         envFrom:
         - configMapRef:
             name: backend
@@ -43,7 +43,7 @@ spec:
         - name: backend-tmp
           mountPath: /tmp
       - name: proxy
-        image: reallibrephotos/librephotos-proxy:latest
+        image: reallibrephotos/librephotos-proxy:2024w40
         securityContext:
           readOnlyRootFilesystem: true
         ports:
