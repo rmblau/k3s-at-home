@@ -28,7 +28,7 @@ spec:
       containers:
         - command:
             - sh
-            - ../script/compose/provision.sh
+            - ../scripts/compose/provision.sh
           image: minio/mc
           name: minio-provision
           volumeMounts:
