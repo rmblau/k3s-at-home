@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: reallibrephotos/librephotos-frontend:2023w31
+        image: reallibrephotos/librephotos-frontend:2024w18
         ports:
         - name: http
           containerPort: 3000
