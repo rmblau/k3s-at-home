@@ -4,14 +4,14 @@ kind: Ingress
 metadata:
   name: librephotos-ingress
   namespace: librephotos
-  annotations:
-    tailscale.com/funnel: "true"
+  #annotations:
+    #tailscale.com/funnel: "true"
 spec:
   defaultBackend:
     service:
       name: proxy
       port:
-        number: 80
+        name: http
   ingressClassName: tailscale
   tls:
   - hosts:
