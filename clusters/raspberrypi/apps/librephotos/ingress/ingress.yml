@@ -2,8 +2,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: grafana-ingress
-  namespace: monitoring
+  name: librephotos-ingress
+  namespace: librephotos
 spec:
   backend:
     service:
