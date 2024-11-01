@@ -9,3 +9,4 @@ resources:
 - monitoring.yaml
 - minecraft.yaml
 - roran.yaml
+- librephotos.yaml
