@@ -9,7 +9,7 @@ spec:
     service:
       name: proxy
       port:
-        name: http
+        name: 80
   ingressClassName: tailscale
   tls:
   - hosts:
