@@ -6,7 +6,7 @@ metadata:
   namespace: ghost
 spec:
   ports:
-  - port: 2368
+  - port: 80
     protocal: TCP
     targetPort: 2368
   selector:
