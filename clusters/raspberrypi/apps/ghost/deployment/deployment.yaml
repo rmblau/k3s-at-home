@@ -8,7 +8,7 @@ metadata:
     app: ghost
 spec:
   nodeSelector:
-    disktype: premimum-ssd
+    disktype: premium-ssd
   replicas: 1
   selector:
     matchLabels:
@@ -19,7 +19,7 @@ spec:
         app: ghost
     spec:
       nodeSelector:
-        disktype: premimum-ssd
+        disktype: premium-ssd
       containers:
       - name: ghost
         image: ghost:5
