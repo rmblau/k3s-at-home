@@ -17,7 +17,7 @@ spec:
         app: mysql
     spec:
       nodeSelector:
-        disktype: ssd
+        disktype: premium-ssd
       containers:
       - name: mysql
         image: mysql:8
