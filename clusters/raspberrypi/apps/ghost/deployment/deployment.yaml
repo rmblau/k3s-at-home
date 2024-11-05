@@ -30,7 +30,7 @@ spec:
           value: mysql
         - name: database__connection__host
           value: 10.43.129.58
-        - name: http://database__connection__user
+        - name: database__connection__user
           value: root
         - name: database__connection__password
           valueFrom:
