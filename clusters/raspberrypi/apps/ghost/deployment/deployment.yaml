@@ -22,7 +22,7 @@ spec:
       #  disktype: premium-ssd
       containers:
       - name: ghost
-        image: ghost:5
+        image: ghost:5.99
         env:
         - name: url
           value: https://rmblau.tail9dea6.ts.net
