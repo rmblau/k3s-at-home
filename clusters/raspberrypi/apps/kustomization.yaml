@@ -7,6 +7,6 @@ resources:
   - monitoring
   - minecraft
 #  - mc-router
-#  - ghost
+  - ghost
   - roran
   - librephotos
