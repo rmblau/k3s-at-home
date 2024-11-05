@@ -45,7 +45,7 @@ spec:
       - name: proxy
         image: reallibrephotos/librephotos-proxy:2024w18
         securityContext:
-          readOnlyRootFilesystem: true
+          readOnlyRootFilesystem: false
         ports:
         - name: proxy
           containerPort: 80
