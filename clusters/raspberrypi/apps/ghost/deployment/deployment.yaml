@@ -7,8 +7,8 @@ metadata:
   labels:
     app: ghost
 spec:
- # nodeSelector:
-  #  disktype: premium-ssd
+  nodeSelector:
+    disktype: premium-ssd
   replicas: 1
   selector:
     matchLabels:
@@ -18,8 +18,8 @@ spec:
       labels:
         app: ghost
     spec:
-      # nodeSelector:
-      #  disktype: premium-ssd
+      nodeSelector:
+        disktype: premium-ssd
       containers:
       - name: ghost
         image: ghost:5.99
