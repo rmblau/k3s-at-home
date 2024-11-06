@@ -8,8 +8,8 @@ spec:
     email: mrb1105@gmail.com
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
-      name: tailscale-issuer-account-key
+      name: letsencrypt-prod
     solvers:
-    - dns01:
-        acmeDNS:
-          host: 100.100.100.100
+    - http01:
+        ingress:
+          class: traefik
