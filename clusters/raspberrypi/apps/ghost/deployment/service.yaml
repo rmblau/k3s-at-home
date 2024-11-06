@@ -6,8 +6,8 @@ metadata:
   namespace: ghost
 spec:
   ports:
-  - port: 443
-    protocal: TCP
+  - port: 80
+    protocol: TCP
     targetPort: 2368
   selector:
     app: ghost
