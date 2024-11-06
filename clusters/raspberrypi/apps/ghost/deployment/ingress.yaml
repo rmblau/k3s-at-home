@@ -1,17 +1,24 @@
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ghost-ingress
   namespace: ghost
   annotations:
-    tailscale.com/funnel: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
-  defaultBackend:
-    service:
-      name: ghost-svc
-      port:
-        number: 80
-  ingressClassName: tailscale
+  rules:
+  - host: rmblau.com # your domain
+    http:
+      paths:
+      - backend:
+          service:
+            name: ghost-svc
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
   tls:
   - hosts:
-    - rmblau
+    - rmblau.com
+    secretName: letsencrypt-prod
