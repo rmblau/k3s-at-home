@@ -53,7 +53,7 @@ data:
           - "SYS_ADMIN"
         drop:
           - "ALL"
-      priviledged: false
+      privileged: false
     extraVolumes:
       - name: hwa
         hostPath:
