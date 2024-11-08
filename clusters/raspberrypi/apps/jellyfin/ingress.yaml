@@ -9,7 +9,7 @@ spec:
     service:
       name: jellyfin
       port:
-        name: 80
+        number: 80
   ingressClassName: tailscale
   tls:
   - hosts:
