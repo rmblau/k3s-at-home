@@ -232,5 +232,5 @@ data:
 kind: ConfigMap
 metadata:
   creationTimestamp: null
-  name: gateway-values.yaml
+  name: values.yaml
   namespace: flux-system
