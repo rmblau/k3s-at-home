@@ -233,4 +233,4 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: values.yaml
-  namespace: flux-system
+  namespace: jellyfin
