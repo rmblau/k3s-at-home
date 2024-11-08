@@ -75,7 +75,7 @@ data:
       # -- Source ranges allowed to access the LoadBalancer.
       loadBalancerSourceRanges: []
       # -- Port for the Jellyfin service.
-      port: 8096
+      port: 80
       # -- Name of the port in the service.
       portName: service
       # -- Annotations for the service.
