@@ -13,3 +13,7 @@ spec:
         kind: HelmRepository
         name: jellyfin-charts
         namespace: flux-system
+  valuesFrom:
+    - kind: ConfigMap
+      name: values.yaml
+      valuesKey: values.yaml
