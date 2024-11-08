@@ -10,3 +10,4 @@ resources:
 - minecraft.yaml
 - roran.yaml
 - librephotos.yaml
+- jellyfin.yaml
