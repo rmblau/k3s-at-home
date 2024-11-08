@@ -6,7 +6,7 @@ resources:
   - longhorn
   - monitoring
   - minecraft
-#  - mc-router
   - ghost
   - roran
   - librephotos
+  - jellyfin
