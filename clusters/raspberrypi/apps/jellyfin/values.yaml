@@ -50,10 +50,9 @@ data:
       capabilities:
         add:
           - "SYS_ADMIN"
-         drop:
+        drop:
           - ALL
       priviledged: false
-
     extraVolumes:
       - name: hwa
         hostPath:
