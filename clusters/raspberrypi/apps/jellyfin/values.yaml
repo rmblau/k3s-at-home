@@ -159,7 +159,8 @@ data:
     #   readOnly: true
 
     # -- Node selector for pod scheduling.
-    nodeSelector: {}
+    nodeSelector:
+      disktype: premium-ssd
 
     # -- Tolerations for pod scheduling.
     tolerations: []
