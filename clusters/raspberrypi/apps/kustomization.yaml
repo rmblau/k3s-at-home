@@ -9,4 +9,4 @@ resources:
   - ghost
   - roran
   - librephotos
-  - jellyfin
+  #- jellyfin
