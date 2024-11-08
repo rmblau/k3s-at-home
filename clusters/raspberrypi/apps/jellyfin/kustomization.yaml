@@ -5,3 +5,4 @@ resources:
 - helm-release.yaml
 - jellyfin-charts.yaml
 - values.yaml
+- ingress.yaml
