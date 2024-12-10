@@ -99,7 +99,7 @@ data:
           # Optional: Set this to pvc to avoid downloading the ML models every start.
           type: emptyDir
           accessMode: ReadWriteMany
-          # storageClass: your-class
+          # storageClass: longhorn
 kind: ConfigMap
 metadata:
   namespace: immich
