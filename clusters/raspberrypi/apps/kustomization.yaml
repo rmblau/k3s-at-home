@@ -10,4 +10,4 @@ resources:
   - roran
   - librephotos
   - jellyfin
-  - immich
+ # - immich
