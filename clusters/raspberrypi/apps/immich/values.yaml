@@ -40,11 +40,7 @@ data:
                 secretKeyRef:
                   key: username
                   name: immich-database
-            database:
-              valueFrom:
-                secretKeyRef:
-                  key: database
-                  name: immich-database
+            database: immich
             password:
               valueFrom:
                 secretKeyRef:
