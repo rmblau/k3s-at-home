@@ -35,11 +35,7 @@ data:
       global:
         postgresql:
           auth:
-            username:
-              valueFrom:
-                secretKeyRef:
-                  key: username
-                  name: immich-database
+            username: immich
             database: immich
             password:
               valueFrom:
