@@ -6,3 +6,4 @@ resources:
 - longhorn-charts.yaml
 - minecraft-charts.yaml
 - prometheus-charts.yaml
+- immich-charts.yaml
