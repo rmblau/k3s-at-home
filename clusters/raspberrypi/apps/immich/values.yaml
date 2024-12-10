@@ -102,5 +102,5 @@ data:
           # storageClass: your-class
 kind: ConfigMap
 metadata:
-  creationTimestamp: null
-  name: immich-values
+  namespace: immich
+  name: values
