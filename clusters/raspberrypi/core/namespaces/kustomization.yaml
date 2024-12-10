@@ -9,6 +9,5 @@ resources:
 - monitoring.yaml
 - minecraft.yaml
 - roran.yaml
-- librephotos.yaml
 - jellyfin.yaml
 - immich.yaml
