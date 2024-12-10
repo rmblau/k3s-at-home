@@ -11,3 +11,4 @@ resources:
 - roran.yaml
 - librephotos.yaml
 - jellyfin.yaml
+- immich.yaml
