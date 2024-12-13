@@ -41,8 +41,6 @@ spec:
           name: java
         - containerPort: 19132
           name: bedrock-v4
-        - containerPort: 19133
-          name: bedrock-v6
       volumes:
       - name: minecraft-data
         persistentVolumeClaim:
