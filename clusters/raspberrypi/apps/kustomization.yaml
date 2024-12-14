@@ -11,3 +11,4 @@ resources:
   - jellyfin
   - immich
   - actual
+  - paperless-ngx
