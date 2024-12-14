@@ -11,4 +11,4 @@ resources:
 - roran.yaml
 - jellyfin.yaml
 - immich.yaml
-- actual-budget.yaml
+- actual.yaml
