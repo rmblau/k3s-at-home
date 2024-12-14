@@ -16,6 +16,7 @@ spec:
       targetPort: bedrock-v4
     - name: bedrock-v4-tcp
       port: 19132
+      nodePort: 30000
       protocol: TCP
       targetPort: bedrock-v4
 
