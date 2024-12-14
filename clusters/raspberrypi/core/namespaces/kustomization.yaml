@@ -12,4 +12,4 @@ resources:
 - jellyfin.yaml
 - immich.yaml
 - actual.yaml
-- paperless-ngx
+- paperless-ngx.yaml
