@@ -7,3 +7,4 @@ resources:
 - minecraft-charts.yaml
 - prometheus-charts.yaml
 - immich-charts.yaml
+- paperless-ngx-charts.yaml
