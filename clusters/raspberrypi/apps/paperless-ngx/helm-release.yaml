@@ -15,5 +15,5 @@ spec:
         namespace: flux-system
   valuesFrom:
     - kind: ConfigMap
-      name: values
+      name: values.yaml
       valuesKey: values.yaml
