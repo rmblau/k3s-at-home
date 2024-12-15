@@ -21,7 +21,7 @@ data:
     env:
       # -- Set the container timezone
       TZ: UTC
-      PAPERLESS_CSRF_TRUSTED_ORIGINS: https://paperless.tail9dea6.ts.net
+      PAPERLESS_URL: https://paperless.tail9dea6.ts.net
       # PAPERLESS_SECRET_KEY: ""
 
     service:
