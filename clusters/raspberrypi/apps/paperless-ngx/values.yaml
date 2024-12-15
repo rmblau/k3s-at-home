@@ -93,7 +93,7 @@ data:
       enabled: true
       auth:
         database: paperless
-        postgresPassword:
+        existingSecret:
           valueFrom:
             secretKeyRef:
               key: password
