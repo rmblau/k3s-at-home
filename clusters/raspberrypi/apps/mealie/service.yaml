@@ -9,4 +9,4 @@ spec:
     app: mealie
   ports:
   - port: 9000
-    targetPort: 9091
+    targetPort: 9000
