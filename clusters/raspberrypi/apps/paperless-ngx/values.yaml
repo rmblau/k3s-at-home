@@ -90,7 +90,7 @@ data:
     #    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/postgresql)
     # @default -- See [values.yaml](./values.yaml)
     postgresql:
-      enabled: true
+      enabled: false
       auth:
         database: paperless
       env:
