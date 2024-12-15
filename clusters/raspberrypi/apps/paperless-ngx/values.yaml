@@ -142,4 +142,5 @@ data:
 kind: ConfigMap
 metadata:
   creationTimestamp: null
+  namespace: paperless-ngx
   name: values.yaml
