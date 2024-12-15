@@ -13,3 +13,4 @@ resources:
 - immich.yaml
 - actual.yaml
 - paperless-ngx.yaml
+- mealie.yaml
