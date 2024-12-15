@@ -92,6 +92,7 @@ data:
     postgresql:
       enabled: true
       auth:
+        username: postgres
         database: paperless
 
       primary:
