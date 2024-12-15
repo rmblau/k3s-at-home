@@ -14,3 +14,4 @@ resources:
 - actual.yaml
 - paperless-ngx.yaml
 - mealie.yaml
+- radicale.yaml
