@@ -92,7 +92,7 @@ data:
       persistence:
         subPath:
       # if set, we'll template this list to the NEXTCLOUD_TRUSTED_DOMAINS env var
-      trustedDomains: []
+      trustedDomains: nextcloud.tail9dea6.ts.net
       ## SMTP configuration
       mail:
         enabled: false
