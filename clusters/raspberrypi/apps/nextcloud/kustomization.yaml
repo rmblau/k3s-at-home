@@ -5,5 +5,5 @@ resources:
 - primary-pvc.yaml
 - pvc.yaml
 - ingress.yaml
-#- helm-release.yaml
-#- values.yaml
+- helm-release.yaml
+- values.yaml
