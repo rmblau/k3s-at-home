@@ -12,7 +12,7 @@ metadata:
         kind: HelmRepository
         name: nextcloud
         namespace: flux-system
-    valuesFrom:
-      - kind: ConfigMap
-        name: values.yaml
-        valuesKey: values.yaml
+  valuesFrom:
+    - kind: ConfigMap
+      name: values.yaml
+      valuesKey: values.yaml
