@@ -15,3 +15,4 @@ resources:
 - paperless-ngx.yaml
 - mealie.yaml
 - nextcloud.yaml
+- grocy.yaml
