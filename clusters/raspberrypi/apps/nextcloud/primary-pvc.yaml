@@ -9,4 +9,4 @@ spec:
       storage: 200Gi
   storageClassName: longhorn
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
