@@ -8,3 +8,4 @@ resources:
 - prometheus-charts.yaml
 - immich-charts.yaml
 - paperless-ngx-charts.yaml
+- nextcloud-charts.yaml
