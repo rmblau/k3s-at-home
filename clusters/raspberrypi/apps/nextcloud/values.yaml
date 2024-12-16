@@ -608,8 +608,8 @@ data:
         cpu: 500m
         memory: 4096Mi
       requests:
-        cpu: 100m
-        memory: 512Mi
+        cpu: 500m
+        memory: 1024Mi
 
     ## Liveness and readiness probe values
     ## Ref: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes
