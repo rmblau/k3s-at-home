@@ -78,8 +78,6 @@ data:
       protocol: https
     nextcloud:
       host: nextcloud.tail9dea6.ts.net
-      env:
-        - OVERWRITEPROTOCOL: https
       username: admin
       ## Use an existing secret
       existingSecret:
