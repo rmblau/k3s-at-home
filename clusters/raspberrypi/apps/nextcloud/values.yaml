@@ -253,7 +253,6 @@ data:
       ##
       ## Extra environment variables
       extraEnv:
-        - OVERWRITEPROTOCOL: https
       #  - name: SOME_SECRET_ENV
       #    valueFrom:
       #      secretKeyRef:
