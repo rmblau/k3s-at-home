@@ -435,10 +435,7 @@ data:
         persistence:
           enabled: true
           # Use an existing Persistent Volume Claim (must be created ahead of time)
-          existingClaim: ""
-          storageClass: longhorn
-          accessMode: ReadWriteOnce
-          size: 8Gi
+          existingClaim: primary-pvc
 
     ##
     ## PostgreSQL chart configuration
