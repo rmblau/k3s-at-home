@@ -78,7 +78,6 @@ data:
       protocol: https
 
     nextcloud:
-      host: nextcloud.tail9dea6.ts.net
       username: admin
       ## Use an existing secret
       existingSecret:
