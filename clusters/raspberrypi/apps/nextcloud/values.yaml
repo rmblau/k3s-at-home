@@ -76,10 +76,9 @@ data:
     phpClientHttpsFix:
       enabled: false
       protocol: https
-
+    extraEnv:
+     - OVERWRITEPROTOCOL: https
     nextcloud:
-      environment:
-        - OVERWRITEPROTOCOL: https
       host: nextcloud.tail9dea6.ts.net
       username: admin
       ## Use an existing secret
