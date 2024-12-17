@@ -9,7 +9,7 @@ spec:
     service:
       name: grocy
       port:
-        number: 9283
+        number: 80
   ingressClassName: tailscale
   tls:
   - hosts:

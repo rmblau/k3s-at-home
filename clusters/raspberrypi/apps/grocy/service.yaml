@@ -7,5 +7,5 @@ spec:
   selector:
     app: grocy
   ports:
-  - port: 9283
-    targetPort: 9283
+  - port: 80
+    targetPort: 80
