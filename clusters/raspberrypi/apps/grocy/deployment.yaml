@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grocy
+  namespace: grocy
+spec:
+  selector:
+    matchLabels:
+      app: grocy
+  template:
+    metadata:
+      labels:
+        app: grocy
+    spec:
+      containers:
+      - name: myapp
+        image: lscr.io/linuxserver/grocy:latest
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 9283
+        volumeMounts:
+        - mountPath: /app/data
+          name: grocy-data
+      volumes:
+      - name: grocy-data
+        persistentVolumeClaim:
+          claimName: grocy-pvc
