@@ -22,17 +22,16 @@ data:
       # -- Set the container timezone
       TZ: UTC
       PAPERLESS_URL: https://paperless.tail9dea6.ts.net
-      PAPERLESS_OAUTH_CALLBACK_BASE_URL: https://paperless.tail9dea6.ts.net
       PAPERLESS_GMAIL_OAUTH_CLIENT_ID:
         valueFrom:
           secretKeyRef:
             key: id
-            name: client_id
+            name: gmail-oauth
       PAPERLESS_GMAIL_OAUTH_CLIENT_SECRET:
         valueFrom:
           secretKeyRef:
-            key: secret
-            name: client_secret
+            key: client-secret
+            name: gmail-oauth
       # PAPERLESS_SECRET_KEY: ""
 
     service:
