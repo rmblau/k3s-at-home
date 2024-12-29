@@ -16,17 +16,17 @@ spec:
       containers:
       - name: beaverhabits
         image: daya0576/beaverhabits:latest
+        env:
+        - name: FIRST_DAY_OF_WEEK
+          value: 6
+        - name: HABITS_STORAGE
+          value: "DATABASE"
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
         - containerPort: 8080
-      env:
-      - name: FIRST_DAY_OF_WEEK
-        value: 6
-      - name: HABITS_STORAGE
-        value: "DATABASE"
       volumes:
       - name: beaverhabits-pvc
         persistentVolumeClaim:
