@@ -32,5 +32,5 @@ spec:
         persistentVolumeClaim:
           claimName: beaverhabits-pvc
       volumeMounts:
-      - mountPath: /app/.user/
+      - mountPath: /app/data
         name: beaverhabits-pvc
