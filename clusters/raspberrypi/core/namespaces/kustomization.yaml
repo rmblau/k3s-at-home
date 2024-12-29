@@ -16,3 +16,4 @@ resources:
 - mealie.yaml
 - nextcloud.yaml
 - grocy.yaml
+- beaverhabits.yaml
