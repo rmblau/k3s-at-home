@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beaverhabits
+  namespace: beaverhabits
+spec:
+  selector:
+    matchLabels:
+      app: beaverhabits
+  template:
+    metadata:
+      labels:
+        app: beaverhabits
+    spec:
+      containers:
+      - name: beaverhabits
+        image: daya0576/beaverhabits:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
+      env:
+      - name: FIRST_DAY_OF_WEEK
+        value: 6
+      - name: HABITS_STORAGE
+        value: "DATABASE"
+      volumes:
+      - name: beaverhabits-pvc
+        persistentVolumeClaim:
+          claimName: beaverhabits-pvc
+      volumeMounts:
+      - mountPath: /app/.user/
+        name: beaverhabits-pvc
