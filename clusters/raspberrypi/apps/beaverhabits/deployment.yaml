@@ -18,7 +18,7 @@ spec:
         image: daya0576/beaverhabits:latest
         env:
         - name: FIRST_DAY_OF_WEEK
-          value: 6
+          value: "6"
         - name: HABITS_STORAGE
           value: "DATABASE"
         resources:
