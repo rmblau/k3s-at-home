@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: beaverhabits-ingress
+  namespace: beaverhabits
+spec:
+  defaultBackend:
+    service:
+      name: beaverhabits-svc
+      port:
+        number: 8080
+  ingressClassName: tailscale
+  tls:
+  - hosts:
+    - habits
