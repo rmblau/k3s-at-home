@@ -63,7 +63,7 @@ data:
       ## Default Timezone (see list at https://www.php.net/manual/en/timezones.php)
       defaultTimezone: ""
       ## Base URL (e.g. https://leantime.domain.tld). Defaults to Ingress/IngressRoute host if enabled.
-      url: ""
+      url: https://planner.tail9dea6.ts.net
       ## Session salt. Defaults to randomly generated.
       sessionSalt: ""
       ## Session expiration. Defaults to 8 hours (28800s).
