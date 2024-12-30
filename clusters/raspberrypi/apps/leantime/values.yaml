@@ -17,12 +17,8 @@ data:
       # Will be mounted on /var/lib/mysql
       persistence:
         enabled: true
-        size: 20Gi
-        accessMode: ReadWriteMany
-        ## Persistent Volume storage class
-        storageClass: longhorn
         ## Use existing Persistent Volume Claim
-        # existingClaim:
+        existingClaim: leantime-pvc
       # Setup limits if desired
       resources: {}
       securityContext: {}
