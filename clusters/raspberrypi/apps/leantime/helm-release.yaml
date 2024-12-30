@@ -7,7 +7,7 @@ spec:
   interval: 30m
   chart:
     spec:
-      chart: leantume
+      chart: leantime
       version: 1.2.1
       sourceRef:
         kind: HelmRepository
