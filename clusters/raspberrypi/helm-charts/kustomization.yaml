@@ -9,3 +9,4 @@ resources:
 - immich-charts.yaml
 - paperless-ngx-charts.yaml
 - nextcloud-charts.yaml
+- leantime-charts.yaml
