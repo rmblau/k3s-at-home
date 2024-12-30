@@ -234,12 +234,8 @@ data:
     # Subpaths will be mounted: 'userfiles' into /var/www/userfiles, 'public-userfiles' into /var/www/public/userfiles
     persistence:
       enabled: true
-      size: 1Gi
-      accessMode: ReadWriteMany
-      ## Persistent Volume storage class
-      # storageClass: longhorn
       ## Use existing Persistent Volume Claim
-      # existingClaim:
+      # existingClaim: leantime-database
       ## Annotations to add to the Persistent Volume Claim
       annotations: {}
 
