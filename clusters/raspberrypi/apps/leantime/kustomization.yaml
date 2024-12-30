@@ -5,4 +5,5 @@ resources:
   - helm-release.yaml
   - pvc.yaml
   - database-pvc.yaml
+  - ingress.yaml
   - values.yaml
