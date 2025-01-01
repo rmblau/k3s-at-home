@@ -24,7 +24,7 @@ spec:
         ports:
         - containerPort: 9283
         volumeMounts:
-        - mountPath: /app/data
+        - mountPath: /config/data
           name: grocy-pvc
       volumes:
       - name: grocy-data
