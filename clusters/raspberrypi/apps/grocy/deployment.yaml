@@ -25,7 +25,7 @@ spec:
         - containerPort: 9283
         volumeMounts:
         - mountPath: /app/data
-          name: grocy-data
+          name: grocy-pvc
       volumes:
       - name: grocy-data
         persistentVolumeClaim:
