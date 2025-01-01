@@ -19,6 +19,8 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "500m"
+        nodeSelector:
+          nodeName: murtagh
         ports:
         - containerPort: 9283
         volumeMounts:
