@@ -13,7 +13,7 @@ spec:
         app: grocy
     spec:
       containers:
-      - name: myapp
+      - name: grocy
         image: lscr.io/linuxserver/grocy:latest
         resources:
           limits:
@@ -24,9 +24,9 @@ spec:
         ports:
         - containerPort: 9283
         volumeMounts:
-        - mountPath: /config/data
+        - mountPath: /var/www/data
           name: grocy-pvc
       volumes:
-      - name: grocy-data
+      - name: grocy-pvc
         persistentVolumeClaim:
           claimName: grocy-pvc
