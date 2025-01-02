@@ -44,4 +44,4 @@ spec:
           name: donetick-configmap
           items:
           - key: configmap.yaml
-            path: selfhosted.yaml
+            path: /config/selfhosted.yaml
