@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: donetick
+  namespace: donetick
+spec:
+  selector:
+    matchLabels:
+      app: donetick
+  template:
+    metadata:
+      labels:
+        app: donetick
+    spec:
+      containers:
+      - name: donetick
+        env:
+        - name: DT_ENV
+          value: selfhosted
+        - name: DT_SQLITE_PATH
+          value: /donetick-data/donetick.db
+        image: donetick/donetick:latest
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 2021
+        volumeMounts:
+        - mountPath: /donetick-data
+          name: donetick-pvc
+        - mountPath: /config
+          name: donetick-config-pvc
+      volumes:
+      - name: donetick-pvc
+        persistentVolumeClaim:
+          claimName: donetick-pvc
+      - name: donetick-config-pvc
+        persistentVolumeClaim:
+          claimName: donetick-config-pvc
