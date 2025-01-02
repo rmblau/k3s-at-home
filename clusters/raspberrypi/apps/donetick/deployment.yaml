@@ -37,11 +37,3 @@ spec:
       - name: donetick-pvc
         persistentVolumeClaim:
           claimName: donetick-pvc
-      - name: donetick-config-pvc
-        persistentVolumeClaim:
-          claimName: donetick-config-pvc
-        configMap:
-          name: donetick-configmap
-          items:
-          - key: configmap.yaml
-            path: /config/selfhosted.yaml
