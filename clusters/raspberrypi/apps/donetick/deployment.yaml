@@ -30,9 +30,6 @@ spec:
         volumeMounts:
         - mountPath: /donetick-data
           name: donetick-pvc
-        - mountPath: /config
-          name: donetick-config-pvc
-          subpath: selfhosted.yaml
       volumes:
       - name: donetick-pvc
         persistentVolumeClaim:
