@@ -2,8 +2,8 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: beaverhabits-pvc
-  namespace: beaverhabits
+  name: donetick-pvc
+  namespace: donetick
 spec:
   resources:
     requests:
