@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
   - home-assistant
   - longhorn
-  - monitoring
+  #- monitoring
   - minecraft
   - ghost
   - roran
