@@ -10,3 +10,4 @@ resources:
 - paperless-ngx-charts.yaml
 - nextcloud-charts.yaml
 - leantime-charts.yaml
+- vikunja-charts.yaml
