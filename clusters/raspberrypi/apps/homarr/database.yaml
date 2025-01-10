@@ -1,0 +1,41 @@
+# yamllint disable
+---
+apiVersion: v1
+kind: Secret
+metadata:
+    name: db-secret
+    namespace: homarr
+type: Opaque
+stringData:
+    db-encryption-key: ENC[AES256_GCM,data:p/1vmclOtcM1d3ZVdejObj1/QzBTMv50ssGhlfzelCPhXAlw,iv:NJdagAXIcrHlatdbRYO1Hu5vWbaDk23I8+ysY5kXirQ=,tag:8q2dCrVwTOc3dnRe8kBsFA==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-01-10T23:53:38Z"
+    mac: ENC[AES256_GCM,data:tAxA397X3TVf9a8HFHoP57GGp7Yd1QKrcE29yCGHw9aDdreJDKWdiECc5EgPI9nGTYBIxS7EkAnAy6uJtYGlEwdbHbQ8U9BkhJaHGuepywkZ3yfuSndRnStQssKfpGlaEr6rTbGdll/GSR7kEi45PpEolwgTwI3UmyHBJOjOHbs=,iv:7m2oDtqNQBOWFEQC1CqIsLBN4f2fAlJ8209q973dkkw=,tag:gXZwgg/VpDIZIa8zvoLJiA==,type:str]
+    pgp:
+        - created_at: "2025-01-10T23:53:38Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA8qPtDiah3jAAQ//XplPtc65RyzuZeTVXoqqrlkMD6vEOA089hPh7jQ45b0w
+            kdsDK21gusRIveory68/ciOvY04uk+/goF/bhHIjp7p2CnQw6zi0EiRIP9EKPK+G
+            BbnUhS/DQINfqChQZYbz8FoMuN7JSlo6GPZmD4eIPGwgyL0h+BWXC89CsIA4M9bF
+            jZ2Ym3ONh65kNEKTVjL0zJIbrRZAe6Ohp6NmSIvxFGgqn0kb2p1iVNqAHOewEOv8
+            EJ5hnVCeUryRbAGbq96WhG7idjKgcVOQQEfZ8RIYtLhRxn9YLxG8C4sli5FhOBD9
+            EuUxfk2VpeiaqtgQQXCm9RKK9OwW+DyEeGag7Mungf4ujsDlY7S7QCOC7/PxHlXE
+            iXD1hdn5f46+C+nqyBSRGZ1Wqu3H6MpV4hfgJVQhhmgxzyeNlIkxjaXMIe88c043
+            7nCl9WpHd5tzdlwkXC40cuZC+6EDqoe/waTSoibv8I5Kyh/Zvxv/FcEigErGqN5i
+            MKB2ZCFmXwfAf4GuRkBTC24SXlTBGk5DmgvP3R1wdkp7cV1Y7oAZXV6aImOSU9iL
+            oWIUE8QJL7cYitrYxdrpOCoscWbIQPmfB+6f9NHQncz5pPysJifhr8x2JF2y0byJ
+            yTVtK82lUyG1vTKsSOLqLrwk2SuioF69gLlZ96IkKfVw1yV5ZGY7+913HfwnVQHS
+            XgFUj+4mVnkCQzcHffYegPuWdb47y8SPVjX8Gl+LEO/3BXG8pFAR+7rBD+jVArEf
+            vOvL5Snip93S7Jvbx+MvSbSvRXmK5EoP0xMLQDGAj+RWx0us2pvrCGPqMoOm4wA=
+            =4fsW
+            -----END PGP MESSAGE-----
+          fp: B9DBB5EBB5CC92204899530484AE73EC874A540D
+    encrypted_regex: ^(data|stringData)$
+    version: 3.8.1
