@@ -11,3 +11,4 @@ resources:
 - nextcloud-charts.yaml
 - leantime-charts.yaml
 - vikunja-charts.yaml
+- homarr-charts.yaml
