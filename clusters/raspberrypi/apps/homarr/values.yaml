@@ -231,12 +231,6 @@ data:
     # -- Enable and configure Mysql database subchart under this key.
     #    For more options see [Mysql chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/mysql)
     # @default -- See [values.yaml](https://github.com/homarr-labs/charts/blob/dev/charts/homarr/values.yaml)
-    mysql:
-      internal: false
-      auth:
-        existingSecret: "db-secret"
-        username: homarr
-        database: homarrdb
 kind: ConfigMap
 metadata:
   name: values
