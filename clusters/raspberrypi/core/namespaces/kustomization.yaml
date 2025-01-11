@@ -21,3 +21,4 @@ resources:
 - donetick.yaml
 - vikunja.yaml
 - homarr.yaml
+- bitwarden.yaml
