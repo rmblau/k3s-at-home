@@ -12,3 +12,4 @@ resources:
 - leantime-charts.yaml
 - vikunja-charts.yaml
 - homarr-charts.yaml
+- bitwarden-charts.yaml
