@@ -30,7 +30,12 @@ spec:
         volumeMounts:
         - mountPath: /donetick-data
           name: donetick-pvc
+        - mountPath: /config
+          name: donetick-config-pvc
       volumes:
       - name: donetick-pvc
         persistentVolumeClaim:
           claimName: donetick-pvc
+      - name: donetick-config-pvc
+        persistentVolumeClaim:
+          claimName: donetick-config-pvc
