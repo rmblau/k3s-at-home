@@ -29,13 +29,8 @@ spec:
         - containerPort: 2021
         volumeMounts:
         - mountPath: /donetick-data
-          name: donetick-pvc
-        - mountPath: /config
-          name: donetick-config-pvc
+          name: donetick-pvcs
       volumes:
       - name: donetick-pvc
         persistentVolumeClaim:
           claimName: donetick-pvc
-      - name: donetick-config-pvc
-        persistentVolumeClaim:
-          claimName: donetick-config-pvc
