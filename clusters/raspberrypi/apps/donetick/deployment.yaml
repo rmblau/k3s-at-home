@@ -20,7 +20,7 @@ spec:
           value: selfhosted
         - name: DT_SQLITE_PATH
           value: /donetick-data/donetick.db
-        image: ghcr.io/rmblau/donetick:latest
+        image: rmblau/donetick:latest
         resources:
           limits:
             memory: "256Mi"
