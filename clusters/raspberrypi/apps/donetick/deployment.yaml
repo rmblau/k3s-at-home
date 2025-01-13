@@ -21,6 +21,7 @@ spec:
         - name: DT_SQLITE_PATH
           value: /donetick-data/donetick.db
         image: rmblau/donetick:latest
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "256Mi"
