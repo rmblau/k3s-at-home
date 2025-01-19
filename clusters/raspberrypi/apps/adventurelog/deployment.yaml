@@ -1,0 +1,105 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adventurelog
+  namespace: adventurelog
+  labels:
+    app: adventurelog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adventurelog
+  template:
+    metadata:
+      name: adventurelog
+      labels:
+        app: adventurelog
+    spec:
+      volumes:
+        - name: adventure-journal
+          persistentVolumeClaim:
+            claimName: adventure-journal-pvc
+        - name: adventure-journal-db
+          persistentVolumeClaim:
+            claimName: adventure-journal-db-pvc
+      containers:
+        - name: adventure-frontend
+          image: ghcr.io/seanmorley15/adventurelog-frontend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PUBLIC_SERVER_URL
+              value: "https://adventurelog.tail9dea6.ts.net.io:443"
+            - name: ORIGIN
+              value: "https://adventurelog.tail9dea6.ts.net.io:443"
+            - name: BODY_SIZE_LIMIT
+              value: "Infinity"
+
+        - name: adventure-db
+          image: postgis/postgis:15-3.3
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: adventure-journal-db
+              mountPath: /var/lib/postgresql/data
+          env:
+            - name: POSTGRES_DB
+              value: database
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata/subdir
+            - name: POSTGRES_USER
+              value: adventure
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: adventurelog-secret
+                  key: adventure-postgres-password
+
+        - name: adventure-backend
+          image: ghcr.io/seanmorley15/adventurelog-backend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+            - containerPort: 8000
+          volumeMounts:
+            - name: adventure-journal
+              mountPath: /code/media
+          env:
+            - name: PGHOST
+              value: "adventure-db-svc"
+            - name: PGDATABASE
+              value: "database"
+            - name: PGUSER
+              value: "adventure"
+            - name: PGPASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: adventurelog-secret
+                  key: adventure-postgres-password
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: adventurelog-secret
+                  key: adventure-postgres-password
+            - name: PUBLIC_URL
+              value: "https://adventurelog.tail9dea6.ts.net:443" # Match the outward port, used for the creation of image urls
+            - name: FRONTEND_URL
+              value: "https://adventurelog.tail9dea6.ts.net.io:443"
+            - name: CSRF_TRUSTED_ORIGINS
+              value: "https://adventurelog.tail9dea6.ts.net.io:443"
+            - name: DJANGO_ADMIN_USERNAME
+              value: "admin"
+            - name: DJANGO_ADMIN_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: adventurelog-secret
+                  key: django-password
+
+            - name: DJANGO_ADMIN_EMAIL
+              value: "admin@example.com"
+            - name: DEBUG
+              value: "True"
+      restartPolicy: Always
