@@ -16,3 +16,7 @@ spec:
       protocol: TCP
       port: 8000
       targetPort: 8000
+    - name: frontend
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
