@@ -5,4 +5,6 @@ resources:
   - adventure-journal-db-pvc.yaml
   - adventure-journal-pvc.yaml
   - adventurelog-secret.yaml
+  - adventure-db-svc.yaml
+  - server-service.yaml
   - deployment.yaml
