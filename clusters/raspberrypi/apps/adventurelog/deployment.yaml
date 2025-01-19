@@ -32,6 +32,8 @@ spec:
           env:
             - name: PUBLIC_SERVER_URL
               value: "https://adventurelog.tail9dea6.ts.net"
+            - name: ORIGIN
+              value: "https://adventurelog.tail9dea6.ts.net"
             - name: BODY_SIZE_LIMIT
               value: "Infinity"
 
