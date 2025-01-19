@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - adventure-journal-db-pvc.yaml
   - adventure-journal-pvc.yaml
+  - adventurelog-secret.yaml
