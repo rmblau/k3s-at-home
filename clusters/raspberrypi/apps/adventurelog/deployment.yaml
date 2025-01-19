@@ -85,9 +85,9 @@ spec:
                   name: adventurelog-secret
                   key: adventure-postgres-password
             - name: PUBLIC_URL
-              value: "https://adventurelog.tail9dea6.ts.net:443" # Match the outward port, used for the creation of image urls
+              value: "https://adventurelog.tail9dea6.ts.net" # Match the outward port, used for the creation of image urls
             - name: FRONTEND_URL
-              value: "https://adventurelog.tail9dea6.ts.net.io:443"
+              value: "https://adventurelog.tail9dea6.ts.net"
             - name: CSRF_TRUSTED_ORIGINS
               value: "https://adventurelog.tail9dea6.ts.net"
             - name: DJANGO_ADMIN_USERNAME
