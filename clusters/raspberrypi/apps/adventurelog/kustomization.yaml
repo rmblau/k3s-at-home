@@ -7,4 +7,5 @@ resources:
   - adventurelog-secret.yaml
   - adventure-db-svc.yaml
   - server-service.yaml
+  - ingress.yaml
   - deployment.yaml
