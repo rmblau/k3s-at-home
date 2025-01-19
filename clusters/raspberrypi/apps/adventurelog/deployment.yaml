@@ -31,9 +31,9 @@ spec:
             - containerPort: 3000
           env:
             - name: PUBLIC_SERVER_URL
-              value: "https://adventurelog.tail9dea6.ts.net.io:443"
+              value: "https://adventurelog.tail9dea6.ts.net:443"
             - name: ORIGIN
-              value: "https://adventurelog.tail9dea6.ts.net.io:443"
+              value: "https://adventurelog.tail9dea6.ts.net:443"
             - name: BODY_SIZE_LIMIT
               value: "Infinity"
 
