@@ -89,7 +89,7 @@ spec:
             - name: FRONTEND_URL
               value: "https://adventurelog.tail9dea6.ts.net"
             - name: CSRF_TRUSTED_ORIGINS
-              value: "https://adventurelog.tail9dea6.ts.net, https://100.80.22.64:443, http://server:80, http://10.43.54.184"
+              value: "https://adventurelog.tail9dea6.ts.net, https://100.80.22.64:443, https://server:443, http://10.43.54.184"
             - name: DJANGO_ADMIN_USERNAME
               value: "admin"
             - name: DJANGO_ADMIN_PASSWORD
