@@ -4,8 +4,6 @@ kind: Service
 metadata:
   name: server
   namespace: adventurelog
-  annotations:
-    tailscale.com/tailnet-ip: 100.80.22.65
 spec:
   selector:
     app: adventurelog
