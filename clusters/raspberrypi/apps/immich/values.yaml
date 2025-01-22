@@ -2,7 +2,7 @@ apiVersion: v1
 data:
   values.yaml: |2
     image:
-      tag: v1.124.1
+      tag: v1.124.2
 
     immich:
       metrics:
