@@ -2,7 +2,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  #- adventure-journal-db-pvc.yaml
+  - adventure-journal-db-pvc.yaml
   - adventure-journal-pvc.yaml
   - adventurelog-secret.yaml
   - adventure-db-svc.yaml
