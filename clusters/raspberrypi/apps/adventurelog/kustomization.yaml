@@ -8,4 +8,4 @@ resources:
   - adventure-db-svc.yaml
   - server-service.yaml
   - ingress.yaml
-  - deployment.yaml
+  #- deployment.yaml
