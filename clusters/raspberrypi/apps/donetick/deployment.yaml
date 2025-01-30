@@ -20,7 +20,7 @@ spec:
           value: selfhosted
         - name: DT_SQLITE_PATH
           value: /donetick-data/donetick.db
-        image: rmblau/donetick:latest
+        image: donetick/donetick:latest
         imagePullPolicy: Always
         resources:
           limits:
