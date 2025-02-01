@@ -64,7 +64,7 @@ data:
       enabled: true
       image:
         repository: ghcr.io/immich-app/immich-server
-        pullPolicy: IfNotPresent
+        pullPolicy: Always
       ingress:
         main:
           enabled: false
@@ -81,7 +81,7 @@ data:
       enabled: true
       image:
         repository: ghcr.io/immich-app/immich-machine-learning
-        pullPolicy: IfNotPresent
+        pullPolicy: Always
       env:
         TRANSFORMERS_CACHE: /cache
       persistence:
