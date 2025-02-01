@@ -14,7 +14,7 @@ data:
       # -- Image pull policy
       pullPolicy: IfNotPresent
       # -- Image tag
-      tag: 2.13.5
+      tag: 2.14.7
 
     # -- Environment variables [[ref]](https://docs.paperless-ngx.com/configuration/)
     # @default -- See [values.yaml](./values.yaml)
