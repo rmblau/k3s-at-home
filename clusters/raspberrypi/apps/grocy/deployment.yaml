@@ -15,6 +15,7 @@ spec:
       containers:
       - name: grocy
         image: lscr.io/linuxserver/grocy:latest
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "512Mi"
