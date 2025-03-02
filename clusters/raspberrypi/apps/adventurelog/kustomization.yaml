@@ -9,4 +9,5 @@ resources:
   - adventure-frontend-svc.yaml
   - server-service.yaml
   - ingress.yaml
+  - frontend-ingress.yaml
   - deployment.yaml
