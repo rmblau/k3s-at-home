@@ -36,6 +36,8 @@ spec:
               value: "https://adventurelog.tail9dea6.ts.net:443"
             - name: BODY_SIZE_LIMIT
               value: "Infinity"
+            - name: PUBLIC_URL
+              value: https://adventurelog.tail9dea6.ts.net
 
         - name: adventure-db
           image: postgis/postgis:15-3.3
