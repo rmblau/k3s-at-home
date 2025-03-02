@@ -6,6 +6,7 @@ resources:
   - adventure-journal-pvc.yaml
   - adventurelog-secret.yaml
   - adventure-db-svc.yaml
+  - adventure-frontend-svc.yaml
   - server-service.yaml
   - ingress.yaml
   - deployment.yaml
