@@ -11,9 +11,8 @@ spec:
       protocol: TCP
       targetPort: java
     - name: bedrock-v4-udp
-      port: 25565
+      port: 19132
       protocol: UDP
-      nodePort: 30001
       targetPort: bedrock-v4
 
   selector:
