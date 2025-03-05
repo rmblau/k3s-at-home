@@ -39,7 +39,7 @@ spec:
         ports:
         - containerPort: 25565
           name: java
-        - containerPort: 19132
+        - containerPort: 25565
           name: bedrock-v4
           protocol: UDP
       volumes:
