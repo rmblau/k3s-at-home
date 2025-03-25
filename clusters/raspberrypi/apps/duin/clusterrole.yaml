@@ -3,7 +3,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: diun
-  namespace: duin
 rules:
   - apiGroups:
       - ""
