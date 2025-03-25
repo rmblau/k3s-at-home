@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: duin-pvc
+  namespace: duin
+spec:
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: longhorn
+  accessModes:
+    - ReadWriteOnce
