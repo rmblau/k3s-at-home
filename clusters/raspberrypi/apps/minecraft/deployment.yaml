@@ -9,6 +9,8 @@ spec:
     matchLabels:
       app: minecraft
   template:
+  annotations:
+    diun.enable: "true"
     metadata:
       labels:
         app: minecraft
@@ -39,7 +41,7 @@ spec:
         ports:
         - containerPort: 25565
           name: java
-        - containerPort: 25565
+        - containerPort: 25566
           name: bedrock-v4
           protocol: UDP
       volumes:
