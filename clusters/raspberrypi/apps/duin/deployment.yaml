@@ -30,7 +30,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: webhook
-                  name: discord-webhook
+                  name: duin-webhook
             - name: DIUN_NOTIF_DISCORD_MENTIONS
               value: "xavierd"
             - name: DIUN_NOTIF_DISCORD_TIMEOUT
