@@ -49,6 +49,8 @@ spec:
               value: "30s"
             - name: DIUN_PROVIDERS_KUBERNETES
               value: "true"
+            - name: DIUN_PROVIDERS_KUBERNETES_WATCHBYDEFAULT
+              value: "true"
       restartPolicy: Always
       volumes:
         - name: duin-pvc
