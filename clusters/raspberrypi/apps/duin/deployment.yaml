@@ -32,7 +32,7 @@ spec:
                   key: webhook
                   name: duin-webhook
             - name: DIUN_NOTIF_DISCORD_MENTIONS
-              value: "xavierd"
+              value: "@xavierd"
             - name: DIUN_NOTIF_DISCORD_TIMEOUT
               value: "10s"
             - name: TZ
